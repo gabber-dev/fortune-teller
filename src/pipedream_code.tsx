@@ -13,7 +13,7 @@ export default defineComponent({
       const messageResponse = await axios.get(`https://api.gabber.dev/v1/realtime/${session_id}/messages`, {
         headers: {
           "Accept": "application/json",
-          "x-api-key": "7373d3ed-239a-429a-9d2b-f644366f663e",
+          "x-api-key": "",
         },
         maxBodyLength: Infinity,
       });
@@ -54,7 +54,7 @@ export default defineComponent({
         headers: {
           "Content-Type": "application/json",
           "Accept": "application/json",
-          "x-api-key": "7373d3ed-239a-429a-9d2b-f644366f663e",
+          "x-api-key": "",
         },
         maxBodyLength: Infinity,
       });
@@ -105,7 +105,7 @@ async function speakMessage(session_id, text) {
       headers: {
         "Content-Type": "application/json",
         "Accept": "application/json",
-        "x-api-key": "7373d3ed-239a-429a-9d2b-f644366f663e",
+        "x-api-key": "",
       },
       maxBodyLength: Infinity,
     });
